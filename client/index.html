@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Predicción de Rendimiento Académico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+    }
+    form > div {
+      margin-bottom: 0.75rem;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    form input[type="number"] {
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    #resultado {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Predicción Rendimiento Académico</h2>
+  <form id="form">
+    <div>
+      <label for="Dalc">Consumo diario de alcohol (0–4)</label>
+      <input id="Dalc" name="Dalc" type="number" min="0" max="4" required>
+    </div>
+    <div>
+      <label for="Walc">Consumo fin de semana (0–4)</label>
+      <input id="Walc" name="Walc" type="number" min="0" max="4" required>
+    </div>
+    <div>
+      <label for="studytime">Tiempo de estudio (1–4)</label>
+      <input id="studytime" name="studytime" type="number" min="1" max="4" required>
+    </div>
+    <div>
+      <label for="absences">Ausencias</label>
+      <input id="absences" name="absences" type="number" min="0" required>
+    </div>
+    <div>
+      <label for="failures">Reprobaciones previas</label>
+      <input id="failures" name="failures" type="number" min="0" required>
+    </div>
+    <div>
+      <label for="goout">Tiempo social fuera (1–5)</label>
+      <input id="goout" name="goout" type="number" min="1" max="5" required>
+    </div>
+    <div>
+      <label for="health">Salud autodeclarada (1–5)</label>
+      <input id="health" name="health" type="number" min="1" max="5" required>
+    </div>
+    <div>
+      <label for="age">Edad</label>
+      <input id="age" name="age" type="number" min="10" required>
+    </div>
+    <div>
+      <label for="sex">Sexo (0=female, 1=male)</label>
+      <input id="sex" name="sex" type="number" min="0" max="1" required>
+    </div>
+    <div>
+      <label for="subject">Materia (0=portuguese, 1=math)</label>
+      <input id="subject" name="subject" type="number" min="0" max="1" required>
+    </div>
+    <button type="submit">Obtener Predicción</button>
+  </form>
+  <div id="resultado"></div>
+  <script src="script.js"></script>
+</body>
+</html>

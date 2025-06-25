@@ -184,7 +184,7 @@ El modelo predice **G3**, la nota final (0–20). Un valor mayor indica mejor re
   - 0–5: Excelente  
   - 6–10: Pocas  
   - 11–20: Moderadas  
-  - >20: Frecuentes  
+  - Más de 20: Frecuentes  
 
 Con estos rangos, el usuario puede ajustar valores desde el cliente y anticipar cómo afectan la predicción de G3.
 

@@ -5,7 +5,7 @@ import joblib, numpy as np
 
 app = FastAPI(title="Alcohol Study Predictor")
 
-origins = ["http://127.0.0.1:8080"]
+origins = ["http://127.0.0.1:8080", "http://localhost:8000", "null", "*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 try:
-    model = joblib.load("model.pkl")
+    model = joblib.load("../model.pkl")
 except FileNotFoundError:
     raise RuntimeError("model.pkl no encontrado en la raíz del proyecto")
 

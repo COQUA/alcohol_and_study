@@ -5,7 +5,7 @@ import joblib, numpy as np
 
 app = FastAPI(title="Alcohol Study Predictor")
 
-origins = ["http://127.0.0.1:8080", "http://localhost:8000", "null", "*"]
+origins = ["http://127.0.0.1:8080", "http://localhost:8000", "http://127.0.0.1:3000", "http://localhost:3000", "null", "*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,

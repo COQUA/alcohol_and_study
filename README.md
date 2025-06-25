@@ -31,7 +31,7 @@ Este proyecto analiza cómo el consumo de alcohol afecta el rendimiento académi
    cd client
    npm install    # o yarn install
    ```
-5. Vuelve al raíz si es necesario:
+5. Vuelve al directorio raíz si es necesario:
    ```bash
    cd ..
    ```

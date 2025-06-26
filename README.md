@@ -75,7 +75,7 @@ Abre tu navegador en `http://localhost:3000`.
 
 ## Uso de la API
 
-Envía un POST a `http://localhost:8000/predict` con un JSON similar a:
+Envía un POST a `http://localhost:8000/docs` con un JSON similar a:
 ```json
 {
   "school": "GP",

@@ -75,7 +75,7 @@ Abre tu navegador en `http://localhost:3000`.
 
 ## Uso de la API
 
-Envía un POST a `http://localhost:8000/docs` con un JSON similar a:
+Esta URL lo que hara es una solicitu POST donde debes envíar un POST a `http://localhost:8000/docs` en el boton "try it out" con un JSON similar a:
 ```json
 {
   "school": "GP",

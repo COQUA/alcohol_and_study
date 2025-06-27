@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     resultadoDiv.textContent = "Calculando...";
 
-    // Construir objeto de entrada
+
     const data = {};
     new FormData(form).forEach((value, key) => {
       data[key] = Number(value);
